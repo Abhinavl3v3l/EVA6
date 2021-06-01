@@ -31,7 +31,7 @@ Best Testing Accuracy: Accuracy =98.89%
 
 Model is light now. We can see it is stable . It might get good accuracy at more epochs. But we need the result in less epo chs. Now trying normalizing the input data by adding BN.
 
-# **Model 4**
+# **Model 2**
 
 ## **Target**
 
@@ -53,7 +53,7 @@ Best Testing Accuracy: Accuracy = 99.61%
 
 Well we got what we needed. But  In model's training accuracy we got above 99.00 after 5th  epochs. This model is good as we can see very less difference between training and testing accuracy.  But the testing  accuracy seems dropping at 10th epochs and  training  accuracy keeps on increasing. If we use dropout it will be tough for the model to learn and in that way we might be able to learn better.
 
-# **Model 5**
+# **Model 3**
 
 ## **Target**
 
