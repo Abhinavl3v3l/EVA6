@@ -1,4 +1,4 @@
-# CIFAR10-S7
+# S7  - Advance Concepts
 
 ## Target:
 1. Network Design - 
@@ -22,11 +22,11 @@ Working with Cifar-10 dataset
 
 **Before Augmentation and normalization**
 
-![Cifar10](imgs/cifar10_images.png "Cifar10")
+![Cifar10](images/cifar10_images.png "Cifar10")
 
 **After Augmentation and normalization**
 
-![transformed](imgs/transformed.png "transformed")
+![transformed](images/transformed.png "transformed")
 
 
 ## Model Summary
@@ -95,71 +95,140 @@ Estimated Total Size (MB): 9.46
 
 ## Results
 1. Validation accuracy
-    a.  `85.32% in 60 epochs`
-    b.  `87.10% in 75 epochs`
+    a.  `85.24% in 62 epochs`
+    b.  `86.52% in 80 epochs`
     
 2.  Train, Validation Plots
-![Train, Valid Plots](imgs/train_validation_plots.png)
+![Train, Valid Plots](images/train_validation_plots.png)
 
-## Misclassified Images
+## Mis-classified Images
 
-![Misclassified](imgs/misclassified.png)
+![Misclassified](images/misclassified.png)
 
 ## Training Logs
 ```
-EPOCH 71 and Learning Rate [0.015324502257075004]: 
-Loss=0.8166183829307556 Batch_id=781 Accuracy=78.21: 100%|██████████| 782/782 [00:28<00:00, 27.07it/s]
+EPOCH 57 and Learning Rate [0.07774140166627344]: 
+Loss=0.5452152490615845 Batch_id=781 Accuracy=75.74: 100%|██████████| 782/782 [00:18<00:00, 42.12it/s]
   0%|          | 0/782 [00:00<?, ?it/s]
-Test set: Average loss: 0.3981, Accuracy: 8670/10000 (86.70%)
+Test set: Average loss: 0.4630, Accuracy: 8443/10000 (84.43%)
+
+EPOCH 58 and Learning Rate [0.07231006616934618]: 
+Loss=0.9580586552619934 Batch_id=781 Accuracy=75.71: 100%|██████████| 782/782 [00:18<00:00, 42.15it/s]
+  0%|          | 0/782 [00:00<?, ?it/s]
+Test set: Average loss: 0.4673, Accuracy: 8453/10000 (84.53%)
+
+EPOCH 59 and Learning Rate [0.066965854707087]: 
+Loss=1.0038752555847168 Batch_id=781 Accuracy=75.87: 100%|██████████| 782/782 [00:18<00:00, 42.03it/s]
+  0%|          | 0/782 [00:00<?, ?it/s]
+Test set: Average loss: 0.4704, Accuracy: 8400/10000 (84.00%)
+
+EPOCH 60 and Learning Rate [0.06172558214592398]: 
+Loss=0.9688518047332764 Batch_id=781 Accuracy=76.45: 100%|██████████| 782/782 [00:18<00:00, 41.81it/s]
+  0%|          | 0/782 [00:00<?, ?it/s]
+Test set: Average loss: 0.4543, Accuracy: 8463/10000 (84.63%)
+
+EPOCH 61 and Learning Rate [0.056605736322048614]: 
+Loss=0.5355124473571777 Batch_id=781 Accuracy=76.35: 100%|██████████| 782/782 [00:18<00:00, 41.30it/s]
+  0%|          | 0/782 [00:00<?, ?it/s]
+Test set: Average loss: 0.4425, Accuracy: 8491/10000 (84.91%)
+
+EPOCH 62 and Learning Rate [0.05162242616458335]: 
+Loss=1.125573754310608 Batch_id=781 Accuracy=76.73: 100%|██████████| 782/782 [00:18<00:00, 41.84it/s]
+  0%|          | 0/782 [00:00<?, ?it/s]
+Test set: Average loss: 0.4258, Accuracy: 8524/10000 (85.24%)
+
+EPOCH 63 and Learning Rate [0.04679133101093077]: 
+Loss=1.1463186740875244 Batch_id=781 Accuracy=77.02: 100%|██████████| 782/782 [00:18<00:00, 41.67it/s]
+  0%|          | 0/782 [00:00<?, ?it/s]
+Test set: Average loss: 0.4307, Accuracy: 8551/10000 (85.51%)
+
+EPOCH 64 and Learning Rate [0.04212765127377732]: 
+Loss=1.1184437274932861 Batch_id=781 Accuracy=77.15: 100%|██████████| 782/782 [00:18<00:00, 42.16it/s]
+  0%|          | 0/782 [00:00<?, ?it/s]
+Test set: Average loss: 0.4269, Accuracy: 8513/10000 (85.13%)
+
+EPOCH 65 and Learning Rate [0.037646060614971416]: 
+Loss=0.6193357110023499 Batch_id=781 Accuracy=76.72: 100%|██████████| 782/782 [00:18<00:00, 41.75it/s]
+  0%|          | 0/782 [00:00<?, ?it/s]
+Test set: Average loss: 0.4240, Accuracy: 8558/10000 (85.58%)
+
+EPOCH 66 and Learning Rate [0.03336065977675451]: 
+Loss=0.46617552638053894 Batch_id=781 Accuracy=77.40: 100%|██████████| 782/782 [00:18<00:00, 41.72it/s]
+  0%|          | 0/782 [00:00<?, ?it/s]
+Test set: Average loss: 0.4273, Accuracy: 8542/10000 (85.42%)
+
+EPOCH 67 and Learning Rate [0.029284932215609218]: 
+Loss=1.0805134773254395 Batch_id=781 Accuracy=77.50: 100%|██████████| 782/782 [00:18<00:00, 42.20it/s]
+  0%|          | 0/782 [00:00<?, ?it/s]
+Test set: Average loss: 0.4245, Accuracy: 8555/10000 (85.55%)
+
+EPOCH 68 and Learning Rate [0.02543170167831689]: 
+Loss=0.5218173265457153 Batch_id=781 Accuracy=77.74: 100%|██████████| 782/782 [00:18<00:00, 41.29it/s]
+  0%|          | 0/782 [00:00<?, ?it/s]
+Test set: Average loss: 0.4148, Accuracy: 8570/10000 (85.70%)
+
+EPOCH 69 and Learning Rate [0.021813091853705845]: 
+Loss=0.5977577567100525 Batch_id=781 Accuracy=78.02: 100%|██████████| 782/782 [00:18<00:00, 41.72it/s]
+  0%|          | 0/782 [00:00<?, ?it/s]
+Test set: Average loss: 0.4122, Accuracy: 8617/10000 (86.17%)
+
+EPOCH 70 and Learning Rate [0.018440488227041]: 
+Loss=0.6212405562400818 Batch_id=781 Accuracy=78.13: 100%|██████████| 782/782 [00:18<00:00, 41.58it/s]
+  0%|          | 0/782 [00:00<?, ?it/s]
+Test set: Average loss: 0.4070, Accuracy: 8621/10000 (86.21%)
+
+EPOCH 71 and Learning Rate [0.015324502257075004]: 
+Loss=0.819345235824585 Batch_id=781 Accuracy=78.16: 100%|██████████| 782/782 [00:18<00:00, 41.28it/s]
+  0%|          | 0/782 [00:00<?, ?it/s]
+Test set: Average loss: 0.4022, Accuracy: 8631/10000 (86.31%)
 
 EPOCH 72 and Learning Rate [0.012474937988473146]: 
-Loss=0.3190598785877228 Batch_id=781 Accuracy=78.63: 100%|██████████| 782/782 [00:28<00:00, 27.16it/s]
+Loss=0.42450496554374695 Batch_id=781 Accuracy=78.68: 100%|██████████| 782/782 [00:18<00:00, 41.79it/s]
   0%|          | 0/782 [00:00<?, ?it/s]
-Test set: Average loss: 0.4006, Accuracy: 8668/10000 (86.68%)
+Test set: Average loss: 0.4050, Accuracy: 8623/10000 (86.23%)
 
 EPOCH 73 and Learning Rate [0.009900761204661693]: 
-Loss=0.7743849754333496 Batch_id=781 Accuracy=78.86: 100%|██████████| 782/782 [00:28<00:00, 27.13it/s]
+Loss=0.8377923369407654 Batch_id=781 Accuracy=78.97: 100%|██████████| 782/782 [00:18<00:00, 41.73it/s]
   0%|          | 0/782 [00:00<?, ?it/s]
-Test set: Average loss: 0.3923, Accuracy: 8685/10000 (86.85%)
+Test set: Average loss: 0.4049, Accuracy: 8615/10000 (86.15%)
 
 EPOCH 74 and Learning Rate [0.007610071218156189]: 
-Loss=0.2570918798446655 Batch_id=781 Accuracy=79.17: 100%|██████████| 782/782 [00:28<00:00, 27.12it/s]
+Loss=0.3178037405014038 Batch_id=781 Accuracy=79.23: 100%|██████████| 782/782 [00:18<00:00, 41.45it/s]
   0%|          | 0/782 [00:00<?, ?it/s]
-Test set: Average loss: 0.3973, Accuracy: 8675/10000 (86.75%)
+Test set: Average loss: 0.4076, Accuracy: 8613/10000 (86.13%)
 
 EPOCH 75 and Learning Rate [0.005610075387127873]: 
-Loss=0.8765673041343689 Batch_id=781 Accuracy=79.14: 100%|██████████| 782/782 [00:28<00:00, 27.22it/s]
+Loss=0.6278717517852783 Batch_id=781 Accuracy=79.13: 100%|██████████| 782/782 [00:18<00:00, 42.04it/s]
   0%|          | 0/782 [00:00<?, ?it/s]
-Test set: Average loss: 0.3861, Accuracy: 8710/10000 (87.10%)
+Test set: Average loss: 0.3981, Accuracy: 8638/10000 (86.38%)
 
 EPOCH 76 and Learning Rate [0.003907066438388321]: 
-Loss=0.6855331659317017 Batch_id=781 Accuracy=79.15: 100%|██████████| 782/782 [00:29<00:00, 26.93it/s]
+Loss=0.6552791595458984 Batch_id=781 Accuracy=79.16: 100%|██████████| 782/782 [00:18<00:00, 41.45it/s]
   0%|          | 0/782 [00:00<?, ?it/s]
-Test set: Average loss: 0.3808, Accuracy: 8722/10000 (87.22%)
+Test set: Average loss: 0.3883, Accuracy: 8668/10000 (86.68%)
 
 EPOCH 77 and Learning Rate [0.0025064026681429217]: 
-Loss=0.4962536692619324 Batch_id=781 Accuracy=79.20: 100%|██████████| 782/782 [00:29<00:00, 26.93it/s]
+Loss=0.42427679896354675 Batch_id=781 Accuracy=79.14: 100%|██████████| 782/782 [00:18<00:00, 41.58it/s]
   0%|          | 0/782 [00:00<?, ?it/s]
-Test set: Average loss: 0.3789, Accuracy: 8734/10000 (87.34%)
+Test set: Average loss: 0.3858, Accuracy: 8679/10000 (86.79%)
 
 EPOCH 78 and Learning Rate [0.0014124910828085392]: 
-Loss=0.24698226153850555 Batch_id=781 Accuracy=79.39: 100%|██████████| 782/782 [00:28<00:00, 27.31it/s]
+Loss=0.22607332468032837 Batch_id=781 Accuracy=79.36: 100%|██████████| 782/782 [00:18<00:00, 41.59it/s]
   0%|          | 0/782 [00:00<?, ?it/s]
-Test set: Average loss: 0.3794, Accuracy: 8715/10000 (87.15%)
+Test set: Average loss: 0.3856, Accuracy: 8690/10000 (86.90%)
 
 EPOCH 79 and Learning Rate [0.0006287735329409451]: 
-Loss=0.5065107345581055 Batch_id=781 Accuracy=79.39: 100%|██████████| 782/782 [00:28<00:00, 26.99it/s]
+Loss=0.6430982351303101 Batch_id=781 Accuracy=79.58: 100%|██████████| 782/782 [00:18<00:00, 41.53it/s]
   0%|          | 0/782 [00:00<?, ?it/s]
-Test set: Average loss: 0.3780, Accuracy: 8726/10000 (87.26%)
+Test set: Average loss: 0.3869, Accuracy: 8684/10000 (86.84%)
 
 EPOCH 80 and Learning Rate [0.00015771588389959499]: 
-Loss=0.48169535398483276 Batch_id=781 Accuracy=79.49: 100%|██████████| 782/782 [00:28<00:00, 27.03it/s]
+Loss=0.6595807075500488 Batch_id=781 Accuracy=79.43: 100%|██████████| 782/782 [00:18<00:00, 41.97it/s]
 
-Test set: Average loss: 0.3847, Accuracy: 8712/10000 (87.12%)
+Test set: Average loss: 0.3931, Accuracy: 8652/10000 (86.52%)
 ```
 
 ## Observations
 1.  So far, from experiments looks like going for high Receptive Field doesn't help if images don't have a lot of backgrounds.
-2.  Depthwise seperable convolutions are great to keep parameteres low.
+2.  Depthwise separable convolutions are great to keep parameters low.
 3.  There is only one way to go, one cycle LR
-4.  Should have tried Resblocks.
