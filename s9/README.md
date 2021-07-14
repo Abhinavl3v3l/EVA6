@@ -1,4 +1,3 @@
-```
 # Resnets and Higher Receptive Fields
 
 The objective of this assignment is to design a custom Resnet model, to identify the best possible Learning rate and implement One Cycle LR scheduler to quickly train the model. The following changes are implemented- 
@@ -14,7 +13,7 @@ The motivation behind this is that, during the middle of learning when the learn
 * Optimizer: SGD
 * Loss Function: Cross Entropy Loss
 * Batch Size: 512
-* Epochs: 40
+* Epochs: 24
 
 * LR Scheduler - One Cycle Policy
 
@@ -25,10 +24,9 @@ The motivation behind this is that, during the middle of learning when the learn
   Steps per epoch = 98
 
   Epochs to reach max LR = 5
-  
 ## Model Summary
 
-​```
+```
 ----------------------------------------------------------------
         Layer (type)               Output Shape         Param #
 ================================================================
@@ -73,19 +71,25 @@ Forward/backward pass size (MB): 6.88
 Params size (MB): 25.07
 Estimated Total Size (MB): 31.96
 ----------------------------------------------------------------
-​```
+```
+
+
 
 ## Results
+
 ### Training loss/accuracy trend across normalization vs epochs
+
+![Result](images/Result.png)
 
 ### Misclassified Images
 
-Below are the list of missclassifed images with their correct and predicted labels.
+Below are the list of missclassifed images with their correct and predicted labels
+
+.![misclassified](images/misclassified.png)
 
 
 ### GradCAM on misclassified images
 
 Below is the class activation mapping for misclassified images. The activation generated is with respect to the class predicted by the model.
-```
 
-{"mode":"full","isActive":false}
+![gradcam](images/gradcam.png)
